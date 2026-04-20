@@ -38,6 +38,12 @@ Description: Output of ./test_tree confirming that the tree serialization and pa
 
 <img width="948" height="172" alt="image" src="https://github.com/user-attachments/assets/2fee4489-5d11-487f-89d7-063812bd23f0" />
 
+Screenshot 2B: Hex Dump of a Tree Object
+
+Description: This screenshot shows the raw binary data of a generated tree object using the xxd tool. It confirms the internal format of the VCS snapshots.
+![2B - Tree Hex Dump]
+<img width="1706" height="402" alt="image" src="https://github.com/user-attachments/assets/75b0ec7e-fb76-44d6-a360-5b08dece8c62" />
+
 
 4. Phase 3 & 4: Indexing and Commits
 This phase implemented the staging area (index_add) and the creation of commit objects which link snapshots to authors and timestamps.
@@ -49,18 +55,24 @@ Description: Output of ./pes status after adding a file, showing it as "staged".
 ![3A - Pes Status]
 <img width="1207" height="358" alt="image" src="https://github.com/user-attachments/assets/bde1f642-2dd8-479a-a288-b41ceb06b5ac" />
 
+Screenshot 3B: Staging Area Manifest (.pes/index)
+
+Description: Analysis of the .pes/index file contents, showing the metadata tracked by the staging area.
+![3B - Index Content Analysis]
+<img width="1341" height="147" alt="image" src="https://github.com/user-attachments/assets/88379dbb-0a4b-4e46-b094-e0bdc31a426a" />
 
 Screenshot 4A: Commit History
 
 Description: Output of ./pes log showing a sequence of commits with hashes, author info, and messages.
 ![4A - Pes Log]
-<img width="1341" height="147" alt="image" src="https://github.com/user-attachments/assets/88379dbb-0a4b-4e46-b094-e0bdc31a426a" />
+<img width="1457" height="406" alt="image" src="https://github.com/user-attachments/assets/c4b799a3-209b-410a-a089-85cdc6ee4618" />
 
 Screenshot 4B: Final Integration
 
 Description: Output of make test-integration showing the full system working end-to-end.
 ![4B - Integration Test Passed]
-<img width="1457" height="406" alt="image" src="https://github.com/user-attachments/assets/c4b799a3-209b-410a-a089-85cdc6ee4618" />
+
+<img width="665" height="965" alt="image" src="https://github.com/user-attachments/assets/6df5f08e-39d5-432c-be04-71b65b0465ad" />
 
 
 5. Analysis Questions & Answers
